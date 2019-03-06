@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background-color: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Helper */
+
+.imagen-responsive {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    /*  v= view
+    h= height */
+    height: 100vh;
+    /*  Codigo del degradado   */
+    background: rgba(18, 112, 227, 1);
+    background: -moz-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18, 112, 227, 1)), color-stop(100%, rgba(89, 194, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(18, 112, 227, 1) 0%, rgba(89, 194, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1270e3', endColorstr='#59c2ff', GradientType=1);
+
+    /*  Codigo del corte del poligono   */
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+    -moz-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+    -ms-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+
+}
+
+.contenedor-flex {
+    display: flex;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_item {
+    height: 50%;
+    flex: 0 0 calc(20%);
+    padding: 0 1rem;
+}
+
+.item2 {
+
+    order: -1;
+    color: white;
+}
+
+.item2 h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.item2 p {
+    font-size: 1rem;
+    margin-bottom: 2rem
+}
+
+.item1 img {
+    width: 70%;
+    display: block;
+    margin: 2rem auto;
+}
+
+.btn-yellow {
+    width: 115px;
+    height: 40px;
+    border-radius: 23px;
+    color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 1rem auto;
+
+    /* Codigo del degradado   */
+    background: rgba(255, 223, 64, 1);
+    background: -moz-linear-gradient(left, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 223, 64, 1)), color-stop(100%, rgba(255, 131, 89, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 223, 64, 1) 0%, rgba(255, 131, 89, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf40', endColorstr='#ff8359', GradientType=1);
+}
+
+
+#features {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.flex-features {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-item {
+    flex: 0 1 calc(50% - 1rem);
+    margin: 1rem 0;
+}
+
+.icon-feature {
+    width: 30%;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.feature-item h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.feature-item p {
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+#product {
+    width: 100%;
+    height: auto;
+    padding: 20rem 0;
+
+    background: rgba(245, 49, 127, 1);
+    background: -moz-linear-gradient(top, rgba(245, 49, 127, 1) 0%, rgba(255, 125, 110, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245, 49, 127, 1)), color-stop(100%, rgba(255, 125, 110, 1)));
+    background: -webkit-linear-gradient(top, rgba(245, 49, 127, 1) 0%, rgba(255, 125, 110, 1) 100%);
+    background: -o-linear-gradient(top, rgba(245, 49, 127, 1) 0%, rgba(255, 125, 110, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(245, 49, 127, 1) 0%, rgba(255, 125, 110, 1) 100%);
+    background: linear-gradient(to bottom, rgba(245, 49, 127, 1) 0%, rgba(255, 125, 110, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5317f', endColorstr='#ff7d6e', GradientType=0);
+
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 85%, 0% 100%);
+    display: flex;
+}
+
+
+.flex-products {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-item {
+    flex: 0 1 calc(100% - 1rem);
+}
+
+.product2 {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.caracteristica {
+    display: flex;
+}
+
+.icon-product {
+    flex: 0 1 20%;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.description-product {
+    flex: 0 1 80%;
+    padding: 1rem;
+    color: white;
+}
+
+.icon-product img {
+    width: 60%;
+}
+
+
+
+.about-item {
+    flex: 0 1 calc(50% - 1rem);
+}
+.about-item h2{
+    margin-bottom: 2rem;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.flex-about {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#shop {
+    width: 100%;
+    height: auto;
+    padding: 20rem 0;
+
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 85%, 0% 100%);
+
+
+background: rgba(106,202,224,1);
+background: -moz-linear-gradient(left, rgba(106,202,224,1) 0%, rgba(104,89,234,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(106,202,224,1)), color-stop(100%, rgba(104,89,234,1)));
+background: -webkit-linear-gradient(left, rgba(106,202,224,1) 0%, rgba(104,89,234,1) 100%);
+background: -o-linear-gradient(left, rgba(106,202,224,1) 0%, rgba(104,89,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(106,202,224,1) 0%, rgba(104,89,234,1) 100%);
+background: linear-gradient(to right, rgba(106,202,224,1) 0%, rgba(104,89,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6acae0', endColorstr='#6859ea', GradientType=1 );
+
+}
+
+.flex-shop {
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+}
+.shop-item {
+    flex: 0 1 calc(33% - 1rem);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#shop h2{
+    margin: 10rem 0 2rem;
+    text-align: center;
+    color: white;
+}
+
+#shop p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.shop-item h4{
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+.shop-item h5{
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 0.3rem 0;
+}
+.btn-shop{
+    display: flex;
+    width: 115px;
+    height: 40px;
+    border-radius: 22px;
+    border:solid 1px white;
+    margin: 0.5rem auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}

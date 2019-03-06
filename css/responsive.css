@@ -1,0 +1,131 @@
+@media only screen and (min-width: 768px) {
+    .contenedor-flex {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_item {
+        height: 50%;
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+    .item1 {
+        order: 1;
+    }
+
+    .item2 {
+        order: 1;
+    }
+
+    .btn-yellow {
+        margin: 1rem 0;
+    }
+
+    .item2 h2 {
+        font-size: 3rem;
+    }
+
+    /*  Estilos de la seccion Features   */
+    .flex-features {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .feature-item {
+        flex: 0 1 calc(50% - 1rem);
+    }
+
+    .flex-features h2 {
+        flex: 0 1 100%;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .flex-features p {
+        flex: 0 0 100%;
+        margin: 0 auto 3rem;
+        text-align: center;
+        padding: 2rem 6rem;
+    }
+
+    .feature-item p {
+        padding: 0.5rem 1rem;
+    }
+
+    /*  Estilos de la seccion de Features   */
+
+    .flex-products {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product-item {
+        flex: 0 1 calc(50% - 1rem);
+    }
+
+    .product2 {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .caracteristica {
+        display: flex;
+    }
+
+    .icon-product {
+        flex: 0 1 20%;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .description-product {
+        flex: 0 1 80%;
+        padding: 1rem;
+        color: white;
+    }
+
+    .icon-product img {
+        width: 60%;
+    }
+
+    /*  Estilos de la seccion Shop   */
+    .flex-shop {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .shop-item {
+        flex: 0 1 calc(33% - 1rem);
+    }
+
+    #shop p{
+    width: 50%;
+    }
+
+
+
+
+
+}
+
+/*Aqui cierra el media querie de la tableta */
+
+
+/*********************************************
+    Media Querie del Desktop
+*********************************************/
+
+@media only screen and (min-width: 1200px) {
+    .feature-item {
+        flex: 0 1 calc(33% - 1rem);
+    }
+
+
+}
+
+/*Aqui cierra el media querie de Desktop */
